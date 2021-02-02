@@ -243,16 +243,16 @@ void cmdCallback(const ros::TimerEvent& e) {
   cmd.position.y = pos(1);
   cmd.position.z = pos(2);
 
-  cmd.velocity.x = vel(0);
-  cmd.velocity.y = vel(1);
-  cmd.velocity.z = vel(2);
+  cmd.velocity.x = vel(0) * 0;
+  cmd.velocity.y = vel(1) * 0;
+  cmd.velocity.z = vel(2) * 0;
 
-  cmd.acceleration.x = acc(0);
-  cmd.acceleration.y = acc(1);
-  cmd.acceleration.z = acc(2);
+  cmd.acceleration.x = acc(0) * 0;
+  cmd.acceleration.y = acc(1) * 0;
+  cmd.acceleration.z = acc(2) * 0;
 
   cmd.yaw = yaw;
-  cmd.yaw_dot = yawdot;
+  cmd.yaw_dot = yawdot * 0;
 
   auto pos_err = pos_f - pos;
   // if (pos_err.norm() > 1e-3) {
