@@ -24,12 +24,12 @@
     <!-- <arg name="camera_pose_topic" value="/pcl_render_node/camera_pose"/> -->
     <!-- <arg name="depth_topic" value="/pcl_render_node/depth"/> -->
 
-    <arg name="camera_pose_topic" value="/openvslam/pose"/>
+    <arg name="camera_pose_topic" value="/openvslam/camera_pose"/>
     <arg name="depth_topic" value="/camera/aligned_depth_to_color/image_raw"/>
 
     <!-- topic of point cloud measurement, such as from LIDAR  -->
     <!-- don't set camera pose and depth, if you already set this one! -->
-    <arg name="cloud_topic" value="/pcl_render_node/cloud"/>
+    <arg name="cloud_topic" value="NONE"/>
 
     <!-- intrinsic params of the depth camera -->
     <!-- <arg name="cx" value="321.04638671875"/> -->
@@ -37,10 +37,10 @@
     <!-- <arg name="fx" value="387.229248046875"/> -->
     <!-- <arg name="fy" value="387.229248046875"/> -->
 
-    <arg name="cx" value="313.0935363769531"/>
-    <arg name="cy" value="238.74679565429688"/>
-    <arg name="fx" value="613.535888671875"/>
-    <arg name="fy" value="614.2517700195312"/>
+    <arg name="cx" value="312.530517578125"/>
+    <arg name="cy" value="245.98532104492188"/>
+    <arg name="fx" value="380.7373046875"/>
+    <arg name="fy" value="379.8907775878906"/>
 
     <!-- maximum velocity and acceleration the drone will reach -->
     <arg name="max_vel" value="3.0" />
